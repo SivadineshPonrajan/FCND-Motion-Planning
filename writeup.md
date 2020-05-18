@@ -3,41 +3,27 @@
 
 ---
 
-
-# Required Steps for a Passing Submission:
-1. Load the 2.5D map in the colliders.csv file describing the environment.
-2. Discretize the environment into a grid or graph representation.
-3. Define the start and goal locations.
-4. Perform a search using A* or other search algorithm.
-5. Use a collinearity test or ray tracing method (like Bresenham) to remove unnecessary waypoints.
-6. Return waypoints in local ECEF coordinates (format for `self.all_waypoints` is [N, E, altitude, heading], where the drone’s start location corresponds to [0, 0, 0, 0].
-7. Write it up.
-8. Congratulations!  Your Done!
-
-## [Rubric](https://review.udacity.com/#!/rubrics/1534/view) Points
-### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
-
 ---
-### Writeup / README
+### Writeup 
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  
+#### 1. A Writeup that includes all the rubric points and how I overcame each one of them.  
 
-You're reading it! Below I describe how I addressed each rubric point and where in my code each point is handled.
+The current writeup.md file that you are reading is my writeup for how i overcame each task. 
 
 ### Explain the Starter Code
 
 #### 1. Explain the functionality of what's provided in `motion_planning.py` and `planning_utils.py`
-These scripts contain a basic planning implementation that includes...
 
-And here's a lovely image of my results (ok this image has nothing to do with it, but it's a nice example of how to include images in your writeup!)
+Based on my undertanding of the starter code:
+
+* Initially the Drone takesoff at the center of the map.
+* By deafult this is the global home and it is the starting point.
+* A path is calculated using A-star algorithm.
+* Thus the waypoint is calculated.
+* Since the goal is 10 meters north and 10 meters east from the starting point, the drone followed the calculated waypoints and moved in a zig-zag way to reach the goal.
+
 ![Top Down View](./misc/high_up.png)
 
-Here's | A | Snappy | Table
---- | --- | --- | ---
-1 | `highlight` | **bold** | 7.41
-2 | a | b | c
-3 | *italic* | text | 403
-4 | 2 | 3 | abcd
 
 ### Implementing Your Path Planning Algorithm
 
