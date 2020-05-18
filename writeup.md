@@ -63,7 +63,10 @@ The local position obtained here is with reference to the global home position. 
 ![Code 1](./misc/3.PNG)
 
 #### 5. Modify A* to include diagonal motion (or replace A* altogether)
-Minimal requirement here is to modify the code in planning_utils() to update the A* implementation to include diagonal motions on the grid that have a cost of sqrt(2), but more creative solutions are welcome. Explain the code you used to accomplish this step.
+
+To add the diagonal motions in the grid, new actions (diagonal path movement) are included at the cost of square root of 2 (used np.sqrt) and updated the valid actions if-else ways. 
+
+![Code 1](./misc/5.PNG)
 
 #### 6. Cull waypoints 
 For this step you can use a collinearity test or ray tracing method like Bresenham. The idea is simply to prune your path of unnecessary waypoints. Explain the code you used to accomplish this step.
