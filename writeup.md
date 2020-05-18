@@ -40,12 +40,17 @@ Here students should read the first line of the csv file, extract lat0 and lon0 
 
 Then global position of the drone was obtained and converted to local position using global_to_local function.
 
-![Code 1](./misc/1.PNG)
-
 #### The above codes is in the line 135 to 139 in motion_planning.py file
 
+![Code 1](./misc/1.PNG)
+
 #### 3. Set grid start position from local position
-This is another step in adding flexibility to the start location. As long as it works you're good to go!
+
+The local position obtained here is with reference to the global home position. Thus added the negative offsets of North and East with the local position.
+
+#### The above codes is in the line 151 in motion_planning.py file
+
+![Code 1](./misc/4.PNG)
 
 #### 4. Set grid goal position from geodetic coords
 This step is to add flexibility to the desired goal location. Should be able to choose any (lat, lon) within the map and have it rendered to a goal location on the grid.
