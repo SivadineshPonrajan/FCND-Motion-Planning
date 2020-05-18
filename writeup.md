@@ -53,7 +53,14 @@ The local position obtained here is with reference to the global home position. 
 ![Code 1](./misc/4.PNG)
 
 #### 4. Set grid goal position from geodetic coords
-This step is to add flexibility to the desired goal location. Should be able to choose any (lat, lon) within the map and have it rendered to a goal location on the grid.
+
+* Here I have declared two variables for latitude and longitude. 
+* Then converted it into the geodetic format.
+* Further they are converted into NED coordinates because we need NED coordinates to calculate motion planning.
+
+#### The above codes is in the line 161 to 165 in motion_planning.py file
+
+![Code 1](./misc/3.PNG)
 
 #### 5. Modify A* to include diagonal motion (or replace A* altogether)
 Minimal requirement here is to modify the code in planning_utils() to update the A* implementation to include diagonal motions on the grid that have a cost of sqrt(2), but more creative solutions are welcome. Explain the code you used to accomplish this step.
