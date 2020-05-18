@@ -30,16 +30,19 @@ Based on my undertanding of the starter code:
 #### 1. Set your global home position
 Here students should read the first line of the csv file, extract lat0 and lon0 as floating point values and use the self.set_home_position() method to set global home. Explain briefly how you accomplished this in your code.
 
+* Basically here i have read the colliders.csv file.
+* Then obtained the lat0 and lon0 values by parsing it.
+* Then the home position is set using the lat0 and lon0 with altitude as 0.
 
-And here is a lovely picture of our downtown San Francisco environment from above!
-![Map of SF](./misc/map.png)
+#### The above codes is in the line 124 to 135 in motion_planning.py file
 
 #### 2. Set your current local position
-Here as long as you successfully determine your local position relative to global home you'll be all set. Explain briefly how you accomplished this in your code.
 
+Then global position of the drone was obtained and converted to local position using global_to_local function.
 
-Meanwhile, here's a picture of me flying through the trees!
-![Forest Flying](./misc/in_the_trees.png)
+![Code 1](./misc/1.PNG)
+
+#### The above codes is in the line 135 to 139 in motion_planning.py file
 
 #### 3. Set grid start position from local position
 This is another step in adding flexibility to the start location. As long as it works you're good to go!
