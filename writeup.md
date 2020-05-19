@@ -77,7 +77,9 @@ To add the diagonal motions in the grid, new actions (diagonal path movement) ar
 
 ### Execute the flight
 
-Yeah it worked well. Moreover I just wanted to check whether the flying car moves exacty through the path, so to avoid the momentum on reaching a waypoint I added time.sleep(3) to waypoint_transition function and it followed exacly the same path.
+Yeah it worked well. Moreover I just wanted to check whether the flying car moves exacty through the path, so to avoid the momentum on reaching a waypoint I added time.sleep(3) to waypoint_transition function and it followed exacly the same path. Below I have attached the working video.
+
+[![WORKING TEXT HERE](./misc/23.png)](https://www.youtube.com/watch?v=NHZRknKY2EE&feature=youtu.be)
   
 # Extra Challenges: Real World Planning
 
